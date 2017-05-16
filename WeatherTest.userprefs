@@ -1,10 +1,11 @@
 ﻿<Properties StartupConfiguration="{26E80B92-3E2D-4F04-98C9-9AD06E804531}|Default">
   <MonoDevelop.Ide.ItemProperties.WeatherTest.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="WeatherTest Status">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WeatherTest/Views/WeatherPage.xaml">
     <Files>
       <File FileName="WeatherTest/Views/WeatherPage.xaml" Line="4" Column="99" />
       <File FileName="WeatherTest/Views/WeatherPage.xaml.cs" Line="27" Column="28" />
       <File FileName="WeatherTest Status" />
+      <File FileName="Views Status" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,9 +13,7 @@
           <Node name="WeatherTest" expanded="True">
             <Node name="WeatherTest" expanded="True">
               <Node name="Views" expanded="True">
-                <Node name="WeatherPage.xaml" expanded="True">
-                  <Node name="WeatherPage.xaml.cs" selected="True" />
-                </Node>
+                <Node name="WeatherPage.xaml" expanded="True" selected="True" />
               </Node>
               <Node name="App.xaml" expanded="True" />
             </Node>
