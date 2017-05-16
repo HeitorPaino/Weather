@@ -1,0 +1,23 @@
+﻿<Properties StartupConfiguration="{1D41320B-5EA3-42EC-9B95-A766B74CA6C5}|Default">
+  <MonoDevelop.Ide.ItemProperties.WeatherTest.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="WeatherTest" expanded="True">
+            <Node name="WeatherTest" expanded="True">
+              <Node name="GettingStarted" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.WeatherTest.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.CD2131DA-7685-4075-BBC2-6E500BA9EB19" />
+  <MultiItemStartupConfigurations />
+</Properties>
