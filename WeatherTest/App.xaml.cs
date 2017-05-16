@@ -8,7 +8,7 @@ namespace WeatherTest
         {
             InitializeComponent();
 
-            MainPage = new WeatherTestPage();
+            MainPage = new NavigationPage(new Views.WeatherPage());
         }
 
         protected override void OnStart()
