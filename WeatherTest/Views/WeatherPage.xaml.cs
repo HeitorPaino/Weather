@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Net.Http;
 using Newtonsoft.Json;
+using System.Text;
 
 using Xamarin.Forms;
 
@@ -12,6 +13,7 @@ namespace WeatherTest.Views
         public WeatherPage()
         {
             InitializeComponent();
+            this.BindingContext = this;
         }
 
         private async void getJson(){
@@ -22,9 +24,27 @@ namespace WeatherTest.Views
             System.Diagnostics.Debug.WriteLine(json);
         }
 
+        private async void sendJson(){
+			HttpClient cliente = new HttpClient();
+
+			var json = JsonConvert.SerializeObject(new
+			{
+				name = "Heitor",
+				job = "Programador",
+
+			});
+
+			var conteudo = new StringContent(json, Encoding.UTF8, "application/json");
+
+            var resposta = await cliente.PostAsync("https://reqres.in/api/users", conteudo);
+
+            System.Diagnostics.Debug.WriteLine(resposta);
+        }
+
         void Handle_Clicked(object sender, System.EventArgs e)
         {
-            this.getJson();
+            //this.getJson();
+            this.sendJson();
         }
     }
 }
