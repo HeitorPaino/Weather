@@ -7,9 +7,19 @@ namespace WeatherTest.Views
 {
     public partial class WeatherDetail : ContentPage
     {
-        public WeatherDetail()
+        Person pessoa { get; set; }
+
+        public WeatherDetail(String person)
         {
+            this.pessoa = person.name;
             InitializeComponent();
+
         }
+    }
+
+    public class Person
+    {
+        String name { get; set; }
+        String job { get; set; }
     }
 }

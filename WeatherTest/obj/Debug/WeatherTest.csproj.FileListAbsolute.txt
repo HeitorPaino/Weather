@@ -19,3 +19,4 @@
 /Users/heitorpaino/Projects/WeatherTest/WeatherTest/obj/Debug/WeatherTest.Views.WeatherPage.xaml.g.cs
 /Users/heitorpaino/Projects/WeatherTest/WeatherTest/obj/Debug/WeatherTest.dll
 /Users/heitorpaino/Projects/WeatherTest/WeatherTest/obj/Debug/WeatherTest.pdb
+/Users/heitorpaino/Projects/WeatherTest/WeatherTest/obj/Debug/WeatherTest.Views.WeatherDetail.xaml.g.cs

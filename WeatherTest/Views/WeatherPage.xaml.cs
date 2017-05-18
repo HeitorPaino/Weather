@@ -10,6 +10,14 @@ namespace WeatherTest.Views
 {
     public partial class WeatherPage : ContentPage
     {
+		public class Person
+		{
+			String name { get; set; }
+			String job { get; set; }
+		}
+
+        Object result;
+
         public WeatherPage()
         {
             InitializeComponent();
@@ -38,13 +46,20 @@ namespace WeatherTest.Views
 
             var resposta = await cliente.PostAsync("https://reqres.in/api/users", conteudo);
 
-            System.Diagnostics.Debug.WriteLine(resposta);
+            //System.Diagnostics.Debug.WriteLine(resposta);
+
+            if(resposta.IsSuccessStatusCode){
+                var content = await resposta.Content.ReadAsStringAsync();
+                System.Diagnostics.Debug.WriteLine(content);
+                this.result = JsonConvert.DeserializeObject(content);
+            }
         }
 
         void Handle_Clicked(object sender, System.EventArgs e)
         {
             //this.getJson();
             this.sendJson();
+            Navigation.PushAsync(new WeatherDetail(result.ToString()));
         }
     }
 }
